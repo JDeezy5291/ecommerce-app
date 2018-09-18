@@ -1,0 +1,314 @@
+/************
+GENERAL STYLES
+*************/
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+html {
+	font-size: 20px;
+}
+
+body {
+	/*font-size: 18px;*/
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+	--black: #000;
+	--lightBlack: #282e34;
+	--darkWhite: #ddd;
+	--white: #fff;
+	--gray: #666;
+}
+
+/*************
+	NAVBAR
+*************/
+a.dropdown-item:hover {
+	background-color: #343a40;
+	color: #f4f4f4;
+}
+
+#logOutBTN {
+	border: none;
+	color: rgba(255,255,255,.5);
+	margin-top: 10px;
+}
+
+#logOutBTN:hover {
+	color: rgba(255,255,255,.75);
+	text-decoration: none;
+}
+
+/*************
+   CAROUSEL
+*************/
+.pimg1, .pimg2, .pimg3 {
+	position: relative;
+	opacity: 0.8;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.pimg1 {
+	background-image: url('images/controller.jpg');
+	min-height: 100vh;
+}
+
+.pimg2 {
+	background-image: url('images/cpu.jpg');
+	min-height: 100vh;
+}
+
+.pimg3 {
+	background-image: url('images/monitors.jpg');
+	min-height: 100vh;
+}
+
+.section {
+	text-align: center;
+	padding: 50px 80px;
+}
+
+#title-text {
+	bottom: 300px;
+}
+
+/*LAPTOP PAGE*/
+.laptop-pimg1, .desktop-pimg1, .peripherals-pimg1 {
+	position: relative;
+	opacity: 0.8;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 600px;
+}
+
+div#text-gray {
+	color: #343a40;
+}
+
+/*laptop-pimg1*/
+.laptop-pimg1 {
+	background-image: url('images/laptop/laptop1.jpeg');
+}
+
+/*desktop-pimg1*/
+.desktop-pimg1 {
+	background-image: url('images/desktop/desktop1.jpg');
+}
+
+.peripherals-pimg1 {
+	background-image: url('images/peripherals/monitors.jpg');
+}
+
+/*************
+   SECTIONS
+*************/
+div.card-body ul li {
+	color: #343a40;
+}
+
+section.section-dark a, section.section-light a{
+	text-decoration: none;
+}
+
+.item-fade{
+  vertical-align: top;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  opacity: 1;
+  cursor: pointer;
+}
+
+/*************
+ SECTION LIGHT
+*************/
+.section-light {
+	background-color: #f4f4f4;
+	color: var(--gray);
+}
+
+/*************
+   SHOWCASE
+*************/
+.pimg4 {
+	background-image: url('images/keyboard.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 300px;
+}
+
+/*************
+ SECTION DARK
+*************/
+.section-dark {
+	background-color: #343a40;
+	/*color: #f4f4f4;*/
+}
+
+.section-dark h4 {
+	color: var(--gray);
+}
+
+.section-dark h1 {
+	color: var(--white);
+}
+
+.pimg7 {
+	background-image: url('images/fan.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 200px;
+}
+.pimg8 {
+	background-image: url('images/fan.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 200px;
+}
+.pimg9 {
+	background-image: url('images/fan.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 200px;
+}
+
+/*************
+   FEATURES
+*************/
+img.showcaseImg {
+	max-height: 350px;
+	width: auto;
+}
+
+/*************
+	MODALS
+*************/
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#quantity {
+	display: block;
+	width: 60%;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+div.modal-body img {
+	width: 50%;
+	height: auto;
+}
+
+/*************
+    FOOTER 
+*************/
+ul#footerLi li a {
+	text-decoration: none;
+	color: #6c757d;
+}
+
+ul#footerLi li a:hover {
+	color: #f4f4f4;
+}
+
+section#foot h5 {
+	color: var(--white);
+}
+
+
+/*************
+   LOGIN.PHP 
+*************/
+#form {
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/*************
+MEDIA QUERIES
+*************/
+/*NAVBAR*/
+@media screen and (max-width: 517px) {
+	form#searchFormLarge {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 517px) {
+	form#searchFormSmall {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 698px) {
+	#title-text {
+		bottom: 150px;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	div.modal-body img {
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 280px) {
+	.pimg1, .pimg2, .pimg3 {
+		width: 100%;
+		height: auto;
+	}
+}
